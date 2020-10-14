@@ -1,0 +1,12 @@
+/Users/alivia.sherwood/Desktop/LanguageDesign/Pacman/Pacman/Pacman/bin/Debug/netcoreapp3.1/Pacman.deps.json
+/Users/alivia.sherwood/Desktop/LanguageDesign/Pacman/Pacman/Pacman/bin/Debug/netcoreapp3.1/Pacman.runtimeconfig.json
+/Users/alivia.sherwood/Desktop/LanguageDesign/Pacman/Pacman/Pacman/bin/Debug/netcoreapp3.1/Pacman.runtimeconfig.dev.json
+/Users/alivia.sherwood/Desktop/LanguageDesign/Pacman/Pacman/Pacman/bin/Debug/netcoreapp3.1/Pacman.dll
+/Users/alivia.sherwood/Desktop/LanguageDesign/Pacman/Pacman/Pacman/bin/Debug/netcoreapp3.1/Pacman.pdb
+/Users/alivia.sherwood/Desktop/LanguageDesign/Pacman/Pacman/Pacman/obj/Debug/netcoreapp3.1/Pacman.csprojAssemblyReference.cache
+/Users/alivia.sherwood/Desktop/LanguageDesign/Pacman/Pacman/Pacman/obj/Debug/netcoreapp3.1/Pacman.AssemblyInfoInputs.cache
+/Users/alivia.sherwood/Desktop/LanguageDesign/Pacman/Pacman/Pacman/obj/Debug/netcoreapp3.1/Pacman.AssemblyInfo.cs
+/Users/alivia.sherwood/Desktop/LanguageDesign/Pacman/Pacman/Pacman/obj/Debug/netcoreapp3.1/Pacman.csproj.CoreCompileInputs.cache
+/Users/alivia.sherwood/Desktop/LanguageDesign/Pacman/Pacman/Pacman/obj/Debug/netcoreapp3.1/Pacman.dll
+/Users/alivia.sherwood/Desktop/LanguageDesign/Pacman/Pacman/Pacman/obj/Debug/netcoreapp3.1/Pacman.pdb
+/Users/alivia.sherwood/Desktop/LanguageDesign/Pacman/Pacman/Pacman/obj/Debug/netcoreapp3.1/Pacman.genruntimeconfig.cache

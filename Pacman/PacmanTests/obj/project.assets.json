@@ -901,6 +901,16 @@
         "build": {
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
+      },
+      "Pacman/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Pacman.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Pacman.dll": {}
+        }
       }
     }
   },
@@ -3494,11 +3504,17 @@
         "xunit.runner.visualstudio.2.4.0.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "Pacman/1.0.0": {
+      "type": "project",
+      "path": "../Pacman/Pacman.csproj",
+      "msbuildProject": "../Pacman/Pacman.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.NET.Test.Sdk >= 16.5.0",
+      "Pacman >= 1.0.0",
       "coverlet.collector >= 1.2.0",
       "xunit >= 2.4.0",
       "xunit.runner.visualstudio >= 2.4.0"
@@ -3527,7 +3543,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/alivia.sherwood/Desktop/LanguageDesign/Pacman/Pacman/Pacman/Pacman.csproj": {
+              "projectPath": "/Users/alivia.sherwood/Desktop/LanguageDesign/Pacman/Pacman/Pacman/Pacman.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

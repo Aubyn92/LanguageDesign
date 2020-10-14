@@ -13,6 +13,7 @@
       <e p="Pacman" t="IncludeRecursive">
         <e p=".gitignore" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Map.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -22,6 +23,7 @@
         </e>
         <e p="Pacman.csproj" t="IncludeRecursive" />
         <e p="Program.cs" t="Include" />
+        <e p="Square.cs" t="Include" />
       </e>
       <e p="Pacman.sln" t="IncludeFlat" />
       <e p="PacmanTests" t="IncludeRecursive">

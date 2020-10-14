@@ -14,7 +14,11 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "/Users/alivia.sherwood/Desktop/LanguageDesign/Pacman/Pacman/Pacman/Pacman.csproj": {
+            "projectPath": "/Users/alivia.sherwood/Desktop/LanguageDesign/Pacman/Pacman/Pacman/Pacman.csproj"
+          }
+        }
       }
     },
     "warningProperties": {

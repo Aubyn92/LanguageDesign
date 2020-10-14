@@ -23,21 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf99ffaf-7a0e-44f3-b165-14645ddf384f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Pacman/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PacmanTests/MapTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PacmanTests/PacmanTests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PacmanTests/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PacmanTests/obj/Debug/netcoreapp3.1/PacmanTests.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PacmanTests/obj/Debug/netcoreapp3.1/PacmanTests.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PacmanTests/obj/Debug/netcoreapp3.1/PacmanTests.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PacmanTests/obj/Debug/netcoreapp3.1/PacmanTests.csprojAssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PacmanTests/obj/PacmanTests.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PacmanTests/obj/PacmanTests.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PacmanTests/obj/PacmanTests.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PacmanTests/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PacmanTests/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PacmanTests/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PacmanTests/obj/rider.project.restore.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pacman/Map.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PacmanTests/MapTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/MapTest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +41,7 @@
       <list>
         <option value="$PROJECT_DIR$/PacmanTests/UnitTest1.cs" />
         <option value="$PROJECT_DIR$/PacmanTests/MapTest.cs" />
+        <option value="$PROJECT_DIR$/Pacman/Map.cs" />
       </list>
     </option>
   </component>
@@ -68,7 +58,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected=".NET Project.Pacman">
     <configuration name="Pacman" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -97,7 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602639529373</updated>
       <workItem from="1602639537591" duration="138000" />
-      <workItem from="1602639716713" duration="1010000" />
+      <workItem from="1602639716713" duration="2002000" />
     </task>
     <servers />
   </component>

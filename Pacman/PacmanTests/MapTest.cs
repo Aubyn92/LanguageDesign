@@ -1,4 +1,5 @@
 using System;
+using Pacman;
 using Xunit;
 
 namespace PacmanTests
@@ -10,7 +11,7 @@ namespace PacmanTests
         {
             var map = new Map();
             var result = map.Grid;
-            Assert.IsType<[,]Square>(result);
+            Assert.IsType<Square[,]>(result);
         }
     }
 }
