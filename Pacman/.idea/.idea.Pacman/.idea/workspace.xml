@@ -23,10 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf99ffaf-7a0e-44f3-b165-14645ddf384f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Pacman/Map.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PacmanTests/MapTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/MapTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacman/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +38,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/PacmanTests/UnitTest1.cs" />
-        <option value="$PROJECT_DIR$/PacmanTests/MapTest.cs" />
         <option value="$PROJECT_DIR$/Pacman/Map.cs" />
+        <option value="$PROJECT_DIR$/Pacman/Square.cs" />
+        <option value="$PROJECT_DIR$/PacmanTests/MapTest.cs" />
+        <option value="$PROJECT_DIR$/Pacman/.gitignore" />
       </list>
     </option>
   </component>
@@ -87,7 +87,9 @@
       <option name="presentableId" value="Default" />
       <updated>1602639529373</updated>
       <workItem from="1602639537591" duration="138000" />
-      <workItem from="1602639716713" duration="2002000" />
+      <workItem from="1602639716713" duration="2198000" />
+      <workItem from="1602643028047" duration="48000" />
+      <workItem from="1602643094915" duration="47000" />
     </task>
     <servers />
   </component>
