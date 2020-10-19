@@ -23,7 +23,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19e2b825-f138-4e8c-ae7a-6b7b907d104c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CompositionKata/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Pacman/.vs/Pacman/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Pacman/.vs/Pacman/xs/UserPrefs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Pacman/.vs/Pacman/xs/project-cache/Pacman-Debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Pacman/.vs/Pacman/xs/project-cache/Pacman-Debug.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Pacman/.vs/Pacman/xs/project-cache/PacmanTests-Debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Pacman/.vs/Pacman/xs/project-cache/PacmanTests-Debug.json" afterDir="false" />
@@ -74,8 +73,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
@@ -106,7 +107,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603081720412</updated>
-      <workItem from="1603081723648" duration="169000" />
+      <workItem from="1603081723648" duration="485000" />
     </task>
     <servers />
   </component>
