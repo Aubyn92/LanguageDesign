@@ -2,23 +2,29 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Pacman/Square.cs">
     <Files>
       <File FileName="PacmanTests/MapTest.cs" Line="1" Column="1" />
-      <File FileName="PacmanTests/SquareTest.cs" />
-      <File FileName="Pacman/Square.cs" Line="16" Column="29" />
+      <File FileName="Pacman/Square.cs" Line="50" Column="10" />
+      <File FileName="PacmanTests/SquareTest.cs" Line="66" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Pacman" expanded="True">
-            <Node name="Pacman" expanded="True">
-              <Node name="Square.cs" selected="True" />
-            </Node>
-            <Node name="PacmanTests" expanded="True" />
+            <Node name="Pacman" expanded="True" />
+            <Node name="PacmanTests" expanded="True" selected="True" />
           </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="Pacman" expanded="True" selected="True" />
+          <Node name="Pacman" expanded="True">
+            <Node name="PacmanTests" expanded="True">
+              <Node name="PacmanTests" expanded="True">
+                <Node name="SquareTest" expanded="True">
+                  <Node name="ShouldReturnTrue_IfDotIsRemoved" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>

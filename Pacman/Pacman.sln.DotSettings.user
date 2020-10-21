@@ -1,4 +1,12 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=33927f68_002D5f92_002D4cc5_002Db886_002D1cafd537cc01/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;Solution /&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=41f7f0bd_002D226f_002D4a99_002Dbee5_002Ddd06f92ef7f2/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ShouldChangeDirection_WhenDirectionIsGiven" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::D0114A94-36B9-4591-9BA1-36AB2B369962::.NETCoreApp,Version=v3.1::PacmanTests.PacmanTest.ShouldChangeDirection_WhenDirectionIsGiven&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::D0114A94-36B9-4591-9BA1-36AB2B369962::.NETCoreApp,Version=v3.1::PacmanTests.PacmanTest.ShouldUpdateLocation_WhenRowAndColumnAreGiven&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::D0114A94-36B9-4591-9BA1-36AB2B369962::.NETCoreApp,Version=v3.1::PacmanTests.PacmanTest.ShouldChangeOpenOrClosedMouthState_WhenRotated&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::D0114A94-36B9-4591-9BA1-36AB2B369962::.NETCoreApp,Version=v3.1::PacmanTests.PacmanTest.ShouldChangeOpenOrClosedMouthState_WhenMove&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

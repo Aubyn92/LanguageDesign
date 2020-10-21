@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "/Users/Joyce.Yeung/.nuget/packages/": {}
+    "/Users/alivia.sherwood/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Joyce.Yeung/Projects/LanguageDesign/Pacman/Pacman/Pacman.csproj",
+      "projectUniqueName": "/Users/alivia.sherwood/Desktop/LanguageDesign/Pacman/Pacman/Pacman/Pacman.csproj",
       "projectName": "Pacman",
-      "projectPath": "/Users/Joyce.Yeung/Projects/LanguageDesign/Pacman/Pacman/Pacman.csproj",
-      "packagesPath": "/Users/Joyce.Yeung/.nuget/packages/",
-      "outputPath": "/Users/Joyce.Yeung/Projects/LanguageDesign/Pacman/Pacman/obj/",
+      "projectPath": "/Users/alivia.sherwood/Desktop/LanguageDesign/Pacman/Pacman/Pacman/Pacman.csproj",
+      "packagesPath": "/Users/alivia.sherwood/.nuget/packages/",
+      "outputPath": "/Users/alivia.sherwood/Desktop/LanguageDesign/Pacman/Pacman/Pacman/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/Joyce.Yeung/.config/NuGet/NuGet.Config"
+        "/Users/alivia.sherwood/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -56,7 +56,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -6,7 +6,7 @@ namespace Pacman
 
         public Map()
         {
-            Grid = new Square[2,2];
+            Grid = new Square[5,5];
         }
     }
 }
