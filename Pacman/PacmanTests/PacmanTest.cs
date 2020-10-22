@@ -11,7 +11,7 @@ namespace PacmanTests
         public void ShouldChangeDirection_WhenDirectionIsGiven()
         {
             var pacman = new Pacman.Pacman(12, 15);
-            pacman.Rotate(Direction.South);
+            pacman.Move(Direction.South, 12, 15);
             Assert.Equal(Direction.South, pacman.FacingDirection);
         }
 
@@ -19,15 +19,15 @@ namespace PacmanTests
         public void ShouldUpdateLocation_WhenRowAndColumnAreGiven()
         {
             var pacman = new Pacman.Pacman(12, 15);
-            pacman.Move(10,20);
+            pacman.Move(Direction.North,10,20);
             Assert.Equal(new int[]{10, 20}, pacman.Location);
         }
         
         [Fact]
-        public void ShouldChangeOpenOrClosedMouthState_WhenRotated()
+        public void ShouldChangeOpenOrClosedMouthState_WhenRotate()
         {
             var pacman = new Pacman.Pacman(12, 15);
-            pacman.Rotate(Direction.South);
+            pacman.Move(Direction.South, 12, 15);
             Assert.Equal(Mouth.Closed, pacman.MouthStatus);
         }
         
@@ -35,7 +35,7 @@ namespace PacmanTests
         public void ShouldChangeOpenOrClosedMouthState_WhenMove()
         {
             var pacman = new Pacman.Pacman(12, 15);
-            pacman.Move(16, 18);
+            pacman.Move(Direction.North, 14, 18);
             Assert.Equal(Mouth.Closed, pacman.MouthStatus);
         }
         

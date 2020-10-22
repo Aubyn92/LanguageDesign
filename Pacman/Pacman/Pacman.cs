@@ -2,7 +2,7 @@ using System.Data;
 
 namespace Pacman
 {
-    public class Pacman
+    public class Pacman : IMove
     {
         public int[] Location { get; private set; }
         public Mouth MouthStatus { get; private set; }
@@ -16,20 +16,15 @@ namespace Pacman
             MouthStatus = Mouth.Open;
         }
 
-        public void Rotate(Direction direction)
-        {
-            UpdateDirection(direction);
-            UpdateMouthStatus();
-        }
-
         private void UpdateDirection(Direction direction)
         {
             FacingDirection = direction;
         }
 
-        public void Move(int row, int column)
+        public void Move(Direction direction, int row, int column)
         {
             UpdateLocation(row, column);
+            UpdateDirection(direction);
             UpdateMouthStatus();
         }
 
@@ -51,3 +46,17 @@ namespace Pacman
         }
     }
 }
+
+// ATTRIBUTES:
+// lives
+// points
+// level
+// dot count
+// ghost count
+// state
+
+// METHODS:
+// tick: updates pacman state in each step
+// eat dot: regular or super type of dot as argument, +1 to point attr when dot eaten
+// eat ghost: takes a ghost name as argument
+// ghost count: stores statistics for each ghost as well as the total number of eaten ghosts
