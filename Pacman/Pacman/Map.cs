@@ -7,7 +7,7 @@ namespace Pacman
             
         }
 
-        public Square[,] CreateASampleMap()
+        public static Square[,] CreateASampleMap()
         {
             var list = new Square[,]
             {

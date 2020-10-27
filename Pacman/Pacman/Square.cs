@@ -8,7 +8,7 @@ namespace Pacman
         private bool _rightBorder;
         private bool _bottomBorder;
         private bool _leftBorder;
-        private bool _dot;
+        public bool HasDot { get; private set; }
 
         public Square(bool topBorder, bool rightBorder, bool bottomBorder, bool leftBorder)
         {
@@ -16,7 +16,7 @@ namespace Pacman
             _rightBorder = rightBorder;
             _bottomBorder = bottomBorder;
             _leftBorder = leftBorder;
-            _dot = true;
+            HasDot = true;
         }
 
         public bool IsTopBorderAWall()
@@ -41,9 +41,9 @@ namespace Pacman
 
         public bool CanRemoveDot()
         {
-            if (_dot == true)
+            if (HasDot == true)
             {
-                _dot = false;
+                HasDot = false;
                 return true;
             }
             return false;

@@ -47,16 +47,3 @@ namespace Pacman
     }
 }
 
-// ATTRIBUTES:
-// lives
-// points
-// level
-// dot count
-// ghost count
-// state
-
-// METHODS:
-// tick: updates pacman state in each step
-// eat dot: regular or super type of dot as argument, +1 to point attr when dot eaten
-// eat ghost: takes a ghost name as argument
-// ghost count: stores statistics for each ghost as well as the total number of eaten ghosts

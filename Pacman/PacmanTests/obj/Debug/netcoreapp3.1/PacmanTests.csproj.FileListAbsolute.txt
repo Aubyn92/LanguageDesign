@@ -194,3 +194,5 @@
 /Users/Joyce.Yeung/Projects/LanguageDesign/Pacman/PacmanTests/bin/Debug/netcoreapp3.1/Pacman.pdb
 /Users/Joyce.Yeung/Projects/LanguageDesign/Pacman/PacmanTests/obj/Debug/netcoreapp3.1/PacmanTests.csproj.CopyComplete
 /Users/Joyce.Yeung/Projects/LanguageDesign/Pacman/PacmanTests/obj/Debug/netcoreapp3.1/PacmanTests.genruntimeconfig.cache
+/Users/alivia.sherwood/Desktop/LanguageDesign/Pacman/Pacman/PacmanTests/bin/Debug/netcoreapp3.1/Castle.Core.dll
+/Users/alivia.sherwood/Desktop/LanguageDesign/Pacman/Pacman/PacmanTests/bin/Debug/netcoreapp3.1/Moq.dll
