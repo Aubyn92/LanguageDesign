@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data.Common;
 
@@ -7,9 +8,16 @@ namespace Pacman
     {
         private IInputOutput _io;
 
-        private const char dotSymbol = '.';
-        
-        private const char pacmanSymbol = 'V';
+        private const string dotSymbol = ".";
+
+        private static readonly Dictionary<Direction, string> pacmanSymbol = new Dictionary<Direction, string>
+        {
+            {Direction.North, "V"},
+            {Direction.South, "∧"},
+            {Direction.East, "<"},
+            {Direction.West, ">"}
+        };
+
         public Presenter(IInputOutput inputOutput)
         {
             _io = inputOutput;
@@ -38,14 +46,14 @@ namespace Pacman
             _io.Output(stringToPassIn);
         }
 
-        private char AssignSymbol(Pacman pacman, int row, int column, Square[,] twoDMap)
+        private string AssignSymbol(Pacman pacman, int row, int column, Square[,] twoDMap)
         {
             if (pacman.Location[0]==row && pacman.Location[1]==column)
             {
-                return pacmanSymbol;
+                return pacmanSymbol[pacman.FacingDirection];
             }
 
-            return twoDMap[row, column].HasDot ? dotSymbol : ' ';
+            return twoDMap[row, column].HasDot ? dotSymbol : " ";
         }
     }
 }

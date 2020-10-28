@@ -42,11 +42,26 @@ namespace PacmanTests
             presenter.PrintMap(map, pacman);
             mockio.Verify(x => x.Output("V..\n...\n..."), Times.Exactly(1));
         }
+        
+        [Theory]
+        [InlineData(Direction.North, 1, 2, "...\n..V\n...")]
+        [InlineData(Direction.South, 2, 2, "...\n...\n..∧")]
+        [InlineData(Direction.East, 0, 2, "..<\n...\n...")]
+        [InlineData(Direction.West, 1, 1, "...\n.>.\n...")]
+        public void ShouldPrintMapWithPacman_WithCorrectFacingDirection(Direction direction, int row, int column, string expected)
+        {
+            var map = Map.CreateASampleMap();
+            var mockio = new Mock<IInputOutput>();
+            var presenter = new Presenter(mockio.Object);
+            var pacman = new Pacman.Pacman(0,0);
+            pacman.Move(direction, row, column);
+            presenter.PrintMap(map, pacman);
+            mockio.Verify(x => x.Output(expected), Times.Exactly(1));
+        }
     }
 }
 
 // TO DO:
 // CreateSampleMap should be static or not?
 // print monster
-// print pacman direction
 // print pacman mouth: open and close

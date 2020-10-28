@@ -23,39 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf99ffaf-7a0e-44f3-b165-14645ddf384f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Pacman/IInputOutput.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pacman/Presenter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PacmanTests/bin/Debug/netcoreapp3.1/Castle.Core.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PacmanTests/bin/Debug/netcoreapp3.1/Moq.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CompositionKata/.idea/.idea.CompositionKata/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CompositionKata/.idea/.idea.CompositionKata/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CompositionKata/CompositionKata/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../CompositionKata/CompositionKata/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacman.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacman/Map.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/Map.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacman/Pacman.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/Pacman.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacman/Square.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/Square.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacman/obj/Debug/netcoreapp3.1/Pacman.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/obj/Debug/netcoreapp3.1/Pacman.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacman/obj/Debug/netcoreapp3.1/Pacman.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/obj/Debug/netcoreapp3.1/Pacman.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacman/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PacmanTests/PacmanTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/PacmanTests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacman/Presenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/Presenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacman/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PacmanTests/PresenterTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/PresenterTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PacmanTests/bin/Debug/netcoreapp3.1/Pacman.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/bin/Debug/netcoreapp3.1/Pacman.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PacmanTests/bin/Debug/netcoreapp3.1/Pacman.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/bin/Debug/netcoreapp3.1/Pacman.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PacmanTests/bin/Debug/netcoreapp3.1/PacmanTests.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/bin/Debug/netcoreapp3.1/PacmanTests.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PacmanTests/bin/Debug/netcoreapp3.1/PacmanTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/bin/Debug/netcoreapp3.1/PacmanTests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PacmanTests/bin/Debug/netcoreapp3.1/PacmanTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/bin/Debug/netcoreapp3.1/PacmanTests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PacmanTests/obj/Debug/netcoreapp3.1/PacmanTests.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/obj/Debug/netcoreapp3.1/PacmanTests.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PacmanTests/obj/Debug/netcoreapp3.1/PacmanTests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/obj/Debug/netcoreapp3.1/PacmanTests.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PacmanTests/obj/Debug/netcoreapp3.1/PacmanTests.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/obj/Debug/netcoreapp3.1/PacmanTests.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PacmanTests/obj/Debug/netcoreapp3.1/PacmanTests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/obj/Debug/netcoreapp3.1/PacmanTests.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PacmanTests/obj/Debug/netcoreapp3.1/PacmanTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/obj/Debug/netcoreapp3.1/PacmanTests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PacmanTests/obj/Debug/netcoreapp3.1/PacmanTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/obj/Debug/netcoreapp3.1/PacmanTests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PacmanTests/obj/PacmanTests.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/obj/PacmanTests.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PacmanTests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PacmanTests/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PacmanTests/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PacmanTests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +54,7 @@
         <option value="$PROJECT_DIR$/Pacman/IInputOutput.cs" />
         <option value="$PROJECT_DIR$/Pacman/Square.cs" />
         <option value="$PROJECT_DIR$/Pacman/Pacman.cs" />
+        <option value="$PROJECT_DIR$/Pacman/Program.cs" />
         <option value="$PROJECT_DIR$/Pacman/Presenter.cs" />
         <option value="$PROJECT_DIR$/PacmanTests/PresenterTest.cs" />
       </list>
@@ -148,7 +122,8 @@
       <workItem from="1603324280995" duration="4574000" />
       <workItem from="1603332998811" duration="76000" />
       <workItem from="1603666195937" duration="5395000" />
-      <workItem from="1603760954139" duration="3832000" />
+      <workItem from="1603760954139" duration="4286000" />
+      <workItem from="1603847821480" duration="2060000" />
     </task>
     <servers />
   </component>
@@ -174,6 +149,22 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state width="1571" height="267" key="GridCell.Tab.0.bottom" timestamp="1603849397582">
+      <screen x="56" y="23" width="1624" height="1027" />
+    </state>
+    <state width="1571" height="267" key="GridCell.Tab.0.bottom/56.23.1624.1027@56.23.1624.1027" timestamp="1603849397582" />
+    <state width="1571" height="267" key="GridCell.Tab.0.center" timestamp="1603849397574">
+      <screen x="56" y="23" width="1624" height="1027" />
+    </state>
+    <state width="1571" height="267" key="GridCell.Tab.0.center/56.23.1624.1027@56.23.1624.1027" timestamp="1603849397574" />
+    <state width="1571" height="267" key="GridCell.Tab.0.left" timestamp="1603849397573">
+      <screen x="56" y="23" width="1624" height="1027" />
+    </state>
+    <state width="1571" height="267" key="GridCell.Tab.0.left/56.23.1624.1027@56.23.1624.1027" timestamp="1603849397573" />
+    <state width="1571" height="267" key="GridCell.Tab.0.right" timestamp="1603849397582">
+      <screen x="56" y="23" width="1624" height="1027" />
+    </state>
+    <state width="1571" height="267" key="GridCell.Tab.0.right/56.23.1624.1027@56.23.1624.1027" timestamp="1603849397582" />
     <state x="212" y="96" key="Rider.ProjectTemplateDialog.Size" timestamp="1602639921282">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
@@ -182,10 +173,10 @@
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state x="283" y="88" key="SettingsEditor/56.23.1624.1027@56.23.1624.1027" timestamp="1603241177997" />
-    <state x="639" y="68" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603763288298">
+    <state x="639" y="68" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603849081873">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
-    <state x="639" y="68" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/56.23.1624.1027@56.23.1624.1027" timestamp="1603763288298" />
+    <state x="639" y="68" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/56.23.1624.1027@56.23.1624.1027" timestamp="1603849081873" />
     <state x="429" y="23" width="874" height="1034" key="search.everywhere.popup" timestamp="1603158533212">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
