@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Moq;
 using Pacman;
 using Xunit;
@@ -14,7 +15,8 @@ namespace PacmanTests
             var mockio = new Mock<IInputOutput>();
             var presenter = new Presenter(mockio.Object);
             var pacman = new Pacman.Pacman(10,10);
-            presenter.PrintMap(map, pacman);
+            var characters = new List<ICharacter> {pacman};
+            presenter.PrintMap(map, characters);
             mockio.Verify(x => x.Output("...\n...\n..."), Times.Exactly(1));
         }
         
@@ -28,7 +30,8 @@ namespace PacmanTests
             var mockio = new Mock<IInputOutput>();
             var presenter = new Presenter(mockio.Object);
             var pacman = new Pacman.Pacman(10,10);
-            presenter.PrintMap(map, pacman);
+            var characters = new List<ICharacter> {pacman};
+            presenter.PrintMap(map, characters);
             mockio.Verify(x => x.Output("   \n...\n..."), Times.Exactly(1));
         }
         
@@ -39,7 +42,8 @@ namespace PacmanTests
             var mockio = new Mock<IInputOutput>();
             var presenter = new Presenter(mockio.Object);
             var pacman = new Pacman.Pacman(0,0);
-            presenter.PrintMap(map, pacman);
+            var characters = new List<ICharacter> {pacman};
+            presenter.PrintMap(map, characters);
             mockio.Verify(x => x.Output("V..\n...\n..."), Times.Exactly(1));
         }
         
@@ -55,13 +59,27 @@ namespace PacmanTests
             var presenter = new Presenter(mockio.Object);
             var pacman = new Pacman.Pacman(0,0);
             pacman.Move(direction, row, column);
-            presenter.PrintMap(map, pacman);
+            var characters = new List<ICharacter> {pacman};
+            presenter.PrintMap(map, characters);
             mockio.Verify(x => x.Output(expected), Times.Exactly(1));
+        }
+        
+        [Fact]
+        public void ShouldPrintMapWithMonster_WhenSquareHasMonster()
+        {
+            var map = Map.CreateASampleMap();
+            var mockio = new Mock<IInputOutput>();
+            var presenter = new Presenter(mockio.Object);
+            var monster = new Pacman.Monster(1,1);
+            var pacman = new Pacman.Pacman(0,0);
+            var characters = new List<ICharacter> {monster, pacman};
+            presenter.PrintMap(map, characters);
+            mockio.Verify(x => x.Output("V..\n.👻.\n..."), Times.Exactly(1));
         }
     }
 }
 
 // TO DO:
-// CreateSampleMap should be static or not?
-// print monster
+
+
 // print pacman mouth: open and close

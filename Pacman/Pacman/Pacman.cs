@@ -2,12 +2,12 @@ using System.Data;
 
 namespace Pacman
 {
-    public class Pacman : IMove
+    public class Pacman : ICharacter
     {
         public int[] Location { get; private set; }
         public Mouth MouthStatus { get; private set; }
 
-        public Direction FacingDirection;
+        public Direction FacingDirection { get; private set;}
 
         public Pacman(int row, int column)
         {

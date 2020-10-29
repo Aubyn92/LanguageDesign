@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$USER_HOME$/.gitignore_global" t="IncludeRecursive" />
     <e p="$USER_HOME$/.nuget/packages/microsoft.net.test.sdk/16.5.0/build/netcoreapp2.1" t="Include">
       <e p="Microsoft.NET.Test.Sdk.Program.cs" t="Include" />
     </e>
@@ -14,8 +13,8 @@
         <e p=".gitignore" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Direction.cs" t="Include" />
+        <e p="ICharacter.cs" t="Include" />
         <e p="IInputOutput.cs" t="Include" />
-        <e p="IMove.cs" t="Include" />
         <e p="Map.cs" t="Include" />
         <e p="Monster.cs" t="Include" />
         <e p="Mouth.cs" t="Include" />

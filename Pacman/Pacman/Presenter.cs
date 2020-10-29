@@ -9,6 +9,7 @@ namespace Pacman
         private IInputOutput _io;
 
         private const string dotSymbol = ".";
+        private const string monsterSymbol = "👻";
 
         private static readonly Dictionary<Direction, string> pacmanSymbol = new Dictionary<Direction, string>
         {
@@ -23,7 +24,7 @@ namespace Pacman
             _io = inputOutput;
         }
 
-        public void PrintMap(Square[,] twoDMap, Pacman pacman)
+        public void PrintMap(Square[,] twoDMap, List<ICharacter> characters)
         {
             var numberOfRows = twoDMap.GetLength(0);
             var numberOfColumns = twoDMap.GetLength(1);
@@ -34,7 +35,7 @@ namespace Pacman
                 for (int column = 0; column < numberOfColumns; column++)
                 {
 
-                    stringToPassIn += AssignSymbol(pacman, row, column, twoDMap);
+                    stringToPassIn += AssignSymbol(characters, row, column, twoDMap);
                 }
 
                 if (row < numberOfRows -1)
@@ -46,14 +47,27 @@ namespace Pacman
             _io.Output(stringToPassIn);
         }
 
-        private string AssignSymbol(Pacman pacman, int row, int column, Square[,] twoDMap)
+        private string AssignSymbol(List<ICharacter> characters, int row, int column, Square[,] twoDMap)
         {
-            if (pacman.Location[0]==row && pacman.Location[1]==column)
+            foreach (var character in characters)
             {
-                return pacmanSymbol[pacman.FacingDirection];
+                if (character.Location[0]==row && character.Location[1]==column)
+                {
+                    return AssignCharacterSymbol(character);
+                }
             }
 
             return twoDMap[row, column].HasDot ? dotSymbol : " ";
+        }
+
+        private string AssignCharacterSymbol(ICharacter character)
+        {
+            if (character is Pacman)
+            {
+                return pacmanSymbol[character.FacingDirection];
+            }
+
+            return monsterSymbol;
         }
     }
 }

@@ -1,10 +1,10 @@
 namespace Pacman
 {
-    public class Monster : IMove
+    public class Monster : ICharacter
     {
         public int[] Location { get; private set; }
 
-        public Direction FacingDirection;
+        public Direction FacingDirection { get; private set; }
 
         public Monster(int row, int column)
         {
