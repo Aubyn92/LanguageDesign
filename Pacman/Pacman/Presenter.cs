@@ -8,15 +8,23 @@ namespace Pacman
     {
         private IInputOutput _io;
 
-        private const string dotSymbol = ".";
+        private const string dotSymbol = "🍬";
         private const string monsterSymbol = "👻";
 
-        private static readonly Dictionary<Direction, string> pacmanSymbol = new Dictionary<Direction, string>
+        private static readonly Dictionary<Direction, string> pacmanOpenMouthSymbol = new Dictionary<Direction, string>
         {
             {Direction.North, "V"},
             {Direction.South, "∧"},
             {Direction.East, "<"},
             {Direction.West, ">"}
+        };
+        
+        private static readonly Dictionary<Direction, string> pacmanClosedMouthSymbol = new Dictionary<Direction, string>
+        {
+            {Direction.North, "|"},
+            {Direction.South, "|"},
+            {Direction.East, "-"},
+            {Direction.West, "-"}
         };
 
         public Presenter(IInputOutput inputOutput)
@@ -64,10 +72,19 @@ namespace Pacman
         {
             if (character is Pacman)
             {
-                return pacmanSymbol[character.FacingDirection];
+                return GetPacmanSymbol((Pacman)character);
             }
-
+            
             return monsterSymbol;
+        }
+
+        private string GetPacmanSymbol(Pacman pacman)
+        {
+            if (pacman.MouthStatus == Mouth.Closed)
+            {
+                return pacmanClosedMouthSymbol[pacman.FacingDirection];
+            }
+            return pacmanOpenMouthSymbol[pacman.FacingDirection];
         }
     }
 }

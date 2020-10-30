@@ -22,7 +22,25 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf99ffaf-7a0e-44f3-b165-14645ddf384f" name="Default Changelist" comment="" />
+    <list default="true" id="cf99ffaf-7a0e-44f3-b165-14645ddf384f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Pacman/ConsoleOutput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CompositionKata/.idea/.idea.CompositionKata/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CompositionKata/.idea/.idea.CompositionKata/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CompositionKata/CompositionKata/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../CompositionKata/CompositionKata/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacman/Pacman.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/Pacman.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacman/Presenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/Presenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacman/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PacmanTests/PacmanTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/PacmanTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PacmanTests/PresenterTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/PresenterTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PacmanTests/bin/Debug/netcoreapp3.1/Pacman.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/bin/Debug/netcoreapp3.1/Pacman.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PacmanTests/bin/Debug/netcoreapp3.1/Pacman.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/bin/Debug/netcoreapp3.1/Pacman.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PacmanTests/bin/Debug/netcoreapp3.1/PacmanTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/bin/Debug/netcoreapp3.1/PacmanTests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PacmanTests/bin/Debug/netcoreapp3.1/PacmanTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/bin/Debug/netcoreapp3.1/PacmanTests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PacmanTests/obj/Debug/netcoreapp3.1/PacmanTests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/obj/Debug/netcoreapp3.1/PacmanTests.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PacmanTests/obj/Debug/netcoreapp3.1/PacmanTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/obj/Debug/netcoreapp3.1/PacmanTests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PacmanTests/obj/Debug/netcoreapp3.1/PacmanTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/obj/Debug/netcoreapp3.1/PacmanTests.pdb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,19 +56,20 @@
         <option value="$PROJECT_DIR$/Pacman/.gitignore" />
         <option value="$PROJECT_DIR$/Pacman/Direction.cs" />
         <option value="$PROJECT_DIR$/Pacman/Mouth.cs" />
-        <option value="$PROJECT_DIR$/PacmanTests/PacmanTest.cs" />
         <option value="$PROJECT_DIR$/PacmanTests/MonsterTest.cs" />
         <option value="$PROJECT_DIR$/Pacman/IMove.cs" />
         <option value="$PROJECT_DIR$/PacmanTests/MapTest.cs" />
         <option value="$PROJECT_DIR$/Pacman/Map.cs" />
         <option value="$PROJECT_DIR$/Pacman/IInputOutput.cs" />
         <option value="$PROJECT_DIR$/Pacman/Square.cs" />
-        <option value="$PROJECT_DIR$/Pacman/Program.cs" />
-        <option value="$PROJECT_DIR$/Pacman/ICharacter.cs" />
         <option value="$PROJECT_DIR$/Pacman/Pacman.cs" />
-        <option value="$PROJECT_DIR$/Pacman/Monster.cs" />
+        <option value="$PROJECT_DIR$/PacmanTests/PacmanTest.cs" />
         <option value="$PROJECT_DIR$/Pacman/Presenter.cs" />
         <option value="$PROJECT_DIR$/PacmanTests/PresenterTest.cs" />
+        <option value="$PROJECT_DIR$/Pacman/ConsoleOutput.cs" />
+        <option value="$PROJECT_DIR$/Pacman/Monster.cs" />
+        <option value="$PROJECT_DIR$/Pacman/ICharacter.cs" />
+        <option value="$PROJECT_DIR$/Pacman/Program.cs" />
       </list>
     </option>
   </component>
@@ -67,7 +86,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RunManager" selected=".NET Project.Pacman">
     <configuration name="Pacman" type="DotNetProject" factoryName=".NET Project">
@@ -119,7 +138,8 @@
       <workItem from="1603760954139" duration="4286000" />
       <workItem from="1603847821480" duration="2269000" />
       <workItem from="1603922143792" duration="310000" />
-      <workItem from="1603933018519" duration="4257000" />
+      <workItem from="1603933018519" duration="6043000" />
+      <workItem from="1604020017975" duration="4318000" />
     </task>
     <servers />
   </component>
@@ -145,6 +165,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="450" y="287" key="#Notifications" timestamp="1603943428003">
+      <screen x="0" y="23" width="1680" height="945" />
+    </state>
+    <state x="450" y="287" key="#Notifications/0.23.1680.945@0.23.1680.945" timestamp="1603943428003" />
     <state width="1571" height="267" key="GridCell.Tab.0.bottom" timestamp="1603850496346">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
@@ -165,9 +189,10 @@
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state x="212" y="96" key="Rider.ProjectTemplateDialog.Size/56.23.1624.1027@56.23.1624.1027" timestamp="1602639921282" />
-    <state x="283" y="88" key="SettingsEditor" timestamp="1603241177997">
-      <screen x="56" y="23" width="1624" height="1027" />
+    <state x="235" y="71" width="1445" height="897" key="SettingsEditor" timestamp="1604021235897">
+      <screen x="0" y="23" width="1680" height="945" />
     </state>
+    <state x="235" y="71" width="1445" height="897" key="SettingsEditor/0.23.1680.945@0.23.1680.945" timestamp="1604021235897" />
     <state x="283" y="88" key="SettingsEditor/56.23.1624.1027@56.23.1624.1027" timestamp="1603241177997" />
     <state x="639" y="68" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603849081873">
       <screen x="56" y="23" width="1624" height="1027" />

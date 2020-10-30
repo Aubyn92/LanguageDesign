@@ -9,9 +9,9 @@ namespace Pacman
 
         public Direction FacingDirection { get; private set;}
 
-        public Pacman(int row, int column)
+        public Pacman(Direction direction, int row, int column)
         {
-            FacingDirection = Direction.North;
+            FacingDirection = direction;
             Location = new int[] { row, column };
             MouthStatus = Mouth.Open;
         }
