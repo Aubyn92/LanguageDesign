@@ -13,7 +13,7 @@ namespace Pacman
             var monster1 = new Monster(2,2);
             var monster2 = new Monster(0,0);
             var characters = new List<ICharacter>{pacman, monster1, monster2};
-            var presenter = new Presenter(new ConsoleOutput());
+            var presenter = new Presenter(new ConsoleIo());
             presenter.PrintMap(map, characters);
             Thread.Sleep(2000);
             Console.Clear();

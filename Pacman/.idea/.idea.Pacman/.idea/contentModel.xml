@@ -13,7 +13,8 @@
       <e p="Pacman" t="IncludeRecursive">
         <e p=".gitignore" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
-        <e p="ConsoleOutput.cs" t="Include" />
+        <e p="ConsoleIo.cs" t="Include" />
+        <e p="ConsolePlayer.cs" t="Include" />
         <e p="Direction.cs" t="Include" />
         <e p="ICharacter.cs" t="Include" />
         <e p="IInputOutput.cs" t="Include" />
@@ -46,6 +47,7 @@
         </e>
         <e p="PacmanTest.cs" t="Include" />
         <e p="PacmanTests.csproj" t="IncludeRecursive" />
+        <e p="PlayerTest.cs" t="Include" />
         <e p="PresenterTest.cs" t="Include" />
         <e p="SquareTest.cs" t="Include" />
       </e>

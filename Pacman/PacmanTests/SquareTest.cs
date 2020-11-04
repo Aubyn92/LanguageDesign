@@ -11,7 +11,7 @@ namespace PacmanTests
         }
 
         [Fact]
-        public void ShouldReturnTrue_WhenTopOfSqaureIsAWall()
+        public void ShouldReturnTrue_WhenTopOfSquareIsAWall()
         {
             var square = new Square(true, true, false, false);
             var result = square.IsTopBorderAWall();
