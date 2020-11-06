@@ -23,18 +23,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf99ffaf-7a0e-44f3-b165-14645ddf384f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Pacman/ConsolePlayer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PacmanTests/PlayerTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CompositionKata/.idea/.idea.CompositionKata/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CompositionKata/.idea/.idea.CompositionKata/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CompositionKata/CompositionKata/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../CompositionKata/CompositionKata/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacman/ConsoleOutput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/ConsoleIo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacman/IInputOutput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/IInputOutput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacman/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PacmanTests/PresenterTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/PresenterTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PacmanTests/SquareTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/SquareTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacman.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacman/ConsolePlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/ConsolePlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PacmanTests/PlayerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/PlayerTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PacmanTests/bin/Debug/netcoreapp3.1/Pacman.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/bin/Debug/netcoreapp3.1/Pacman.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PacmanTests/bin/Debug/netcoreapp3.1/Pacman.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/bin/Debug/netcoreapp3.1/Pacman.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PacmanTests/bin/Debug/netcoreapp3.1/PacmanTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/bin/Debug/netcoreapp3.1/PacmanTests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PacmanTests/bin/Debug/netcoreapp3.1/PacmanTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/bin/Debug/netcoreapp3.1/PacmanTests.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PacmanTests/obj/Debug/netcoreapp3.1/PacmanTests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/obj/Debug/netcoreapp3.1/PacmanTests.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PacmanTests/obj/Debug/netcoreapp3.1/PacmanTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/obj/Debug/netcoreapp3.1/PacmanTests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PacmanTests/obj/Debug/netcoreapp3.1/PacmanTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/obj/Debug/netcoreapp3.1/PacmanTests.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,8 +68,8 @@
         <option value="$PROJECT_DIR$/PacmanTests/PacmanTest.cs" />
         <option value="$PROJECT_DIR$/Pacman/ConsoleIo.cs" />
         <option value="$PROJECT_DIR$/Pacman/IInputOutput.cs" />
-        <option value="$PROJECT_DIR$/PacmanTests/PlayerTest.cs" />
         <option value="$PROJECT_DIR$/Pacman/ConsolePlayer.cs" />
+        <option value="$PROJECT_DIR$/PacmanTests/PlayerTest.cs" />
       </list>
     </option>
   </component>
@@ -85,7 +86,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
   </component>
   <component name="RunManager" selected=".NET Project.Pacman">
     <configuration name="Pacman" type="DotNetProject" factoryName=".NET Project">
@@ -143,7 +144,11 @@
       <workItem from="1604281627689" duration="1245000" />
       <workItem from="1604441140983" duration="513000" />
       <workItem from="1604452245073" duration="2136000" />
-      <workItem from="1604454489245" duration="2035000" />
+      <workItem from="1604454489245" duration="2234000" />
+      <workItem from="1604527439773" duration="168000" />
+      <workItem from="1604530116169" duration="1255000" />
+      <workItem from="1604539809673" duration="1904000" />
+      <workItem from="1604623474197" duration="2845000" />
     </task>
     <servers />
   </component>
@@ -173,38 +178,38 @@
       <screen x="0" y="23" width="1680" height="945" />
     </state>
     <state x="450" y="287" key="#Notifications/0.23.1680.945@0.23.1680.945" timestamp="1603943428003" />
-    <state width="1620" height="18" key="GridCell.Tab.0.bottom" timestamp="1604441948474">
+    <state width="1617" height="675" key="GridCell.Tab.0.bottom" timestamp="1604547374969">
       <screen x="0" y="23" width="1680" height="945" />
     </state>
     <state width="942" height="694" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1604056633453" />
-    <state width="1620" height="18" key="GridCell.Tab.0.bottom/0.23.1680.945@0.23.1680.945" timestamp="1604441948474" />
+    <state width="1617" height="675" key="GridCell.Tab.0.bottom/0.23.1680.945@0.23.1680.945" timestamp="1604547374969" />
     <state width="1571" height="267" key="GridCell.Tab.0.bottom/56.23.1624.1027@56.23.1624.1027" timestamp="1603850496346" />
-    <state width="1620" height="18" key="GridCell.Tab.0.center" timestamp="1604441948473">
+    <state width="1617" height="675" key="GridCell.Tab.0.center" timestamp="1604547374968">
       <screen x="0" y="23" width="1680" height="945" />
     </state>
     <state width="942" height="694" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1604056633452" />
-    <state width="1620" height="18" key="GridCell.Tab.0.center/0.23.1680.945@0.23.1680.945" timestamp="1604441948473" />
+    <state width="1617" height="675" key="GridCell.Tab.0.center/0.23.1680.945@0.23.1680.945" timestamp="1604547374968" />
     <state width="1571" height="267" key="GridCell.Tab.0.center/56.23.1624.1027@56.23.1624.1027" timestamp="1603850496345" />
-    <state width="1620" height="18" key="GridCell.Tab.0.left" timestamp="1604441948473">
+    <state width="1617" height="675" key="GridCell.Tab.0.left" timestamp="1604547374967">
       <screen x="0" y="23" width="1680" height="945" />
     </state>
     <state width="942" height="694" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1604056633451" />
-    <state width="1620" height="18" key="GridCell.Tab.0.left/0.23.1680.945@0.23.1680.945" timestamp="1604441948473" />
+    <state width="1617" height="675" key="GridCell.Tab.0.left/0.23.1680.945@0.23.1680.945" timestamp="1604547374967" />
     <state width="1571" height="267" key="GridCell.Tab.0.left/56.23.1624.1027@56.23.1624.1027" timestamp="1603850496344" />
-    <state width="1620" height="18" key="GridCell.Tab.0.right" timestamp="1604441948473">
+    <state width="1617" height="675" key="GridCell.Tab.0.right" timestamp="1604547374968">
       <screen x="0" y="23" width="1680" height="945" />
     </state>
     <state width="942" height="694" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1604056633453" />
-    <state width="1620" height="18" key="GridCell.Tab.0.right/0.23.1680.945@0.23.1680.945" timestamp="1604441948473" />
+    <state width="1617" height="675" key="GridCell.Tab.0.right/0.23.1680.945@0.23.1680.945" timestamp="1604547374968" />
     <state width="1571" height="267" key="GridCell.Tab.0.right/56.23.1624.1027@56.23.1624.1027" timestamp="1603850496345" />
     <state x="212" y="96" key="Rider.ProjectTemplateDialog.Size" timestamp="1602639921282">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state x="212" y="96" key="Rider.ProjectTemplateDialog.Size/56.23.1624.1027@56.23.1624.1027" timestamp="1602639921282" />
-    <state x="235" y="71" width="1445" height="897" key="SettingsEditor" timestamp="1604025692925">
+    <state x="182" y="23" width="1445" height="897" key="SettingsEditor" timestamp="1604544742086">
       <screen x="0" y="23" width="1680" height="945" />
     </state>
-    <state x="235" y="71" width="1445" height="897" key="SettingsEditor/0.23.1680.945@0.23.1680.945" timestamp="1604025692925" />
+    <state x="182" y="23" width="1445" height="897" key="SettingsEditor/0.23.1680.945@0.23.1680.945" timestamp="1604544742086" />
     <state x="283" y="88" key="SettingsEditor/56.23.1624.1027@56.23.1624.1027" timestamp="1603241177997" />
     <state x="639" y="68" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603849081873">
       <screen x="56" y="23" width="1624" height="1027" />

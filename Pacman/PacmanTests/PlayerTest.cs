@@ -13,10 +13,10 @@ namespace PacmanTests
         [InlineData("s", Direction.South)]
         [InlineData("a", Direction.West)]
         [InlineData("d", Direction.East)]
-        // [InlineData("W", Direction.North)]
-        // [InlineData("S", Direction.South)]
-        // [InlineData("A", Direction.West)]
-        // [InlineData("D", Direction.East)]
+        [InlineData("W", Direction.North)]
+        [InlineData("S", Direction.South)]
+        [InlineData("A", Direction.West)]
+        [InlineData("D", Direction.East)]
         
         public void ShouldReturnDirection_WhenValidUserInputReceived(string userInput, Direction direction)
         {
@@ -32,24 +32,24 @@ namespace PacmanTests
             Assert.Equal(direction, result);
         }
 
-        // [Fact]
-        // public void ShouldReturnAvailableDirection()
-        // {
-        //     var io = new Mock<IInputOutput>();
-        //     io.SetupSequence(x => x.Input())
-        //         .Returns("a")
-        //         .Returns("s");
-        //     var player = new ConsolePlayer(io.Object);
-        //     var listOfOptions = new List<Direction>
-        //     {
-        //         Direction.North, Direction.South, Direction.East
-        //     };
-        //     var result = player.DecideNextMove(listOfOptions);
-        //     Assert.Equal(Direction.South, result);
-        //     io.Verify(x => x.Input(), Times.Exactly(2));
-        //     io.Verify(x => x.Output("Option not available; choose again."), Times.Exactly(1));
-        // }
-        //
+        [Fact]
+        public void ShouldReturnAvailableDirection()
+        {
+            var io = new Mock<IInputOutput>();
+            io.SetupSequence(x => x.Input())
+                .Returns("a")
+                .Returns("s");
+            var player = new ConsolePlayer(io.Object);
+            var listOfOptions = new List<Direction>
+            {
+                Direction.North, Direction.South, Direction.East
+            };
+            var result = player.DecideNextMove(listOfOptions);
+            Assert.Equal(Direction.South, result);
+            io.Verify(x => x.Input(), Times.Exactly(2));
+            io.Verify(x => x.Output("Option not available; choose again."), Times.Exactly(1));
+        }
+        
         // [Theory]
         // [InlineData("gidday", "Error. Please input valid option.")]
         // [InlineData("3", "Error. Please input valid option.")]
