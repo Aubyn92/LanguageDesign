@@ -83,6 +83,4 @@ namespace PacmanTests
             mockio.Verify(x => x.Output("🍬🍬🍬\n|🍬🍬\n🍬🍬🍬"), Times.Exactly(1));
         }
     }
-    // decide next move logic player.decideNextMove() 
-    // game and game logic classes
 }

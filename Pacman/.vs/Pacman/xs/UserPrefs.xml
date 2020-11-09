@@ -1,30 +1,25 @@
 ﻿<Properties StartupConfiguration="{EF28C075-4E0B-4471-B0C2-D90A76815585}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Pacman/Square.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pacman/ConsolePlayer.cs">
     <Files>
-      <File FileName="PacmanTests/MapTest.cs" Line="1" Column="1" />
       <File FileName="Pacman/Square.cs" Line="50" Column="10" />
-      <File FileName="PacmanTests/SquareTest.cs" Line="66" Column="6" />
+      <File FileName="PacmanTests/SquareTest.cs" />
+      <File FileName="Pacman/ConsolePlayer.cs" Line="41" Column="1" />
+      <File FileName="PacmanTests/PlayerTest.cs" Line="54" Column="66" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Pacman" expanded="True">
-            <Node name="Pacman" expanded="True" />
-            <Node name="PacmanTests" expanded="True" selected="True" />
+            <Node name="Pacman" expanded="True">
+              <Node name="ConsolePlayer.cs" selected="True" />
+            </Node>
+            <Node name="PacmanTests" expanded="True" />
           </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="Pacman" expanded="True">
-            <Node name="PacmanTests" expanded="True">
-              <Node name="PacmanTests" expanded="True">
-                <Node name="SquareTest" expanded="True">
-                  <Node name="ShouldReturnTrue_IfDotIsRemoved" selected="True" />
-                </Node>
-              </Node>
-            </Node>
-          </Node>
+          <Node name="Pacman" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>

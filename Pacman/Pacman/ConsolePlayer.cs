@@ -25,17 +25,29 @@ namespace Pacman
         {
             Direction result;
             _io.Output("Please input a direction. Choose: \nw = North \ns = South \na = West \nd = East");
-            var errorMessage = "";
+            string errorMessage;
             string userInput;
             do
-            { 
+            {
+                errorMessage = "";
                 userInput = _io.Input().ToLower();
-                errorMessage += GenerateUnavailableMessage(userInput, listOfOptions);
+                errorMessage += GenerateErrorMessage(listOfOptions, userInput);
                 Print(errorMessage);
 
             } while (errorMessage!="");
             result = inputRef[userInput];
             return result;
+        }
+
+        private string GenerateErrorMessage(List<Direction> listOfOptions, string userInput)
+        {
+            string errorMessage = GenerateInvalidInputMessage(userInput);
+            if (errorMessage == "")
+            {
+                errorMessage = GenerateUnavailableMessage(userInput, listOfOptions);
+            }
+
+            return errorMessage;
         }
 
         private void Print(string errorMessage)
@@ -54,6 +66,15 @@ namespace Pacman
             }
 
             return "Option not available; choose again.";
+        }
+
+        private string GenerateInvalidInputMessage(string userInput)
+        {
+            if (inputRef.ContainsKey(userInput.ToLower()))
+            {
+                return "";
+            }
+            return "Error. Please input valid option.";
         }
     }
 }
