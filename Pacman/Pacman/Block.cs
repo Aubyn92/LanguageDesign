@@ -2,7 +2,7 @@ using System;
 
 namespace Pacman
 {
-    public class Square
+    public class Block
     {
         private bool _topBorder;
         private bool _rightBorder;
@@ -10,7 +10,7 @@ namespace Pacman
         private bool _leftBorder;
         public bool HasDot { get; private set; }
 
-        public Square(bool topBorder, bool rightBorder, bool bottomBorder, bool leftBorder)
+        public Block(bool topBorder, bool rightBorder, bool bottomBorder, bool leftBorder)
         {
             _topBorder = topBorder;
             _rightBorder = rightBorder;

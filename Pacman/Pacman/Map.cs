@@ -7,21 +7,21 @@ namespace Pacman
             
         }
 
-        public static Square[,] CreateASampleMap()
+        public static Block[,] CreateASampleMap()
         {
-            var list = new Square[,]
+            var list = new Block[,]
             {
                 {
-                    new Square(true, false, true, true), new Square(true, false, false, false),
-                    new Square(true, true, true, false)
+                    new Block(true, false, true, true), new Block(true, false, false, false),
+                    new Block(true, true, true, false)
                 },
                 {
-                    new Square(true, false, true, true), new Square(false, false, false, false),
-                    new Square(true, true, true, false)
+                    new Block(true, false, true, true), new Block(false, false, false, false),
+                    new Block(true, true, true, false)
                 },
                 {
-                    new Square(true, false, true, true), new Square(false, false, true, false),
-                    new Square(true, true, true, false)
+                    new Block(true, false, true, true), new Block(false, false, true, false),
+                    new Block(true, true, true, false)
                 }
             };
             return list;

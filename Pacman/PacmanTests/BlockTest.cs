@@ -4,16 +4,16 @@ using Xunit;
 
 namespace PacmanTests
 {
-    public class SquareTest
+    public class BlockTest
     {
-        public SquareTest()
+        public BlockTest()
         {
         }
 
         [Fact]
         public void ShouldReturnTrue_WhenTopOfSquareIsAWall()
         {
-            var square = new Square(true, true, false, false);
+            var square = new Block(true, true, false, false);
             var result = square.IsTopBorderAWall();
 
             Assert.True(result);
@@ -22,7 +22,7 @@ namespace PacmanTests
         [Fact]
         public void ShouldReturnFalse_WhenTopOfSquareIsNotAWall()
         {
-            var square = new Square(false, true, false, false);
+            var square = new Block(false, true, false, false);
             var result = square.IsTopBorderAWall();
 
             Assert.False(result);
@@ -31,7 +31,7 @@ namespace PacmanTests
         [Fact]
         public void ShouldReturnTrue_WhenRightOfSquareIsAWall()
         {
-            var square = new Square(false, true, false, false);
+            var square = new Block(false, true, false, false);
             var result = square.IsRightBorderAWall();
 
             Assert.True(result);
@@ -40,7 +40,7 @@ namespace PacmanTests
         [Fact]
         public void ShouldReturnTrue_WhenBottomOfSquareIsAWall()
         {
-            var square = new Square(false, true, true, false);
+            var square = new Block(false, true, true, false);
             var result = square.IsBottomBorderAWall();
 
             Assert.True(result);
@@ -49,7 +49,7 @@ namespace PacmanTests
         [Fact]
         public void ShouldReturnTrue_WhenLeftOfSquareIsAWall()
         {
-            var square = new Square(false, true, true, true);
+            var square = new Block(false, true, true, true);
             var result = square.IsLeftBorderAWall();
 
             Assert.True(result);
@@ -58,7 +58,7 @@ namespace PacmanTests
         [Fact]
         public void ShouldReturnTrue_IfDotIsRemoved()
         {
-            var square = new Square(false, true, true, true);
+            var square = new Block(false, true, true, true);
             var result = square.CanRemoveDot();
 
             Assert.True(result);

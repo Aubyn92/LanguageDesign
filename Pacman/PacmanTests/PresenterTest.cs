@@ -8,7 +8,7 @@ namespace PacmanTests
 {
     public class PresenterTest
     {
-        public Square[,] map;
+        public Block[,] map;
         public Mock<IInputOutput> mockio;
         public Presenter presenter;
         

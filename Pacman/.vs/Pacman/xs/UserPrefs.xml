@@ -1,25 +1,37 @@
 ﻿<Properties StartupConfiguration="{EF28C075-4E0B-4471-B0C2-D90A76815585}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Pacman/ConsolePlayer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pacman/GameRules.cs">
     <Files>
-      <File FileName="Pacman/Square.cs" Line="50" Column="10" />
-      <File FileName="PacmanTests/SquareTest.cs" />
       <File FileName="Pacman/ConsolePlayer.cs" Line="41" Column="1" />
-      <File FileName="PacmanTests/PlayerTest.cs" Line="54" Column="66" />
+      <File FileName="PacmanTests/PlayerTest.cs" />
+      <File FileName="Pacman/GameRules.cs" Line="35" Column="1" />
+      <File FileName="PacmanTests/GameRulesTest.cs" Line="27" Column="15" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Pacman" expanded="True">
             <Node name="Pacman" expanded="True">
-              <Node name="ConsolePlayer.cs" selected="True" />
+              <Node name="GameRules.cs" selected="True" />
             </Node>
             <Node name="PacmanTests" expanded="True" />
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="Pacman" expanded="True" selected="True" />
+          <Node name="Pacman" expanded="True">
+            <Node name="PacmanTests" expanded="True">
+              <Node name="MonsterTests" expanded="True" />
+              <Node name="PacmanTests" expanded="True">
+                <Node name="GameRulesTest" expanded="True">
+                  <Node name="ShouldProvideListOfAvailableDirections_WhenCoOrdinateRecorded" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>

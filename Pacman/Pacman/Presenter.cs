@@ -32,7 +32,7 @@ namespace Pacman
             _io = inputOutput;
         }
 
-        public void PrintMap(Square[,] twoDMap, List<ICharacter> characters)
+        public void PrintMap(Block[,] twoDMap, List<ICharacter> characters)
         {
             var numberOfRows = twoDMap.GetLength(0);
             var numberOfColumns = twoDMap.GetLength(1);
@@ -55,7 +55,7 @@ namespace Pacman
             _io.Output(stringToPassIn);
         }
 
-        private string AssignSymbol(List<ICharacter> characters, int row, int column, Square[,] twoDMap)
+        private string AssignSymbol(List<ICharacter> characters, int row, int column, Block[,] twoDMap)
         {
             foreach (var character in characters)
             {
