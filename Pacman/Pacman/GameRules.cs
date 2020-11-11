@@ -35,5 +35,22 @@ namespace Pacman
 
             return listOfDirections;
         }
+
+        public bool IsGameOver(List<ICharacter>characters)
+        {
+            var pacman = characters.Find(character => character is Pacman);
+            foreach (var character in characters)
+            {
+                if (!(character is Pacman))
+                {
+                    if (character.Location[0] == pacman.Location[0] && character.Location[1] == pacman.Location[1])
+                    {
+                        return true;
+                    }
+                }
+            }
+
+            return false;
+        }
     }
 }

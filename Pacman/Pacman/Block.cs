@@ -39,14 +39,9 @@ namespace Pacman
             return _leftBorder;
         }
 
-        public bool CanRemoveDot()
+        public void RemoveDot()
         {
-            if (HasDot == true)
-            {
-                HasDot = false;
-                return true;
-            }
-            return false;
+            HasDot = false;
         }
     }
 }

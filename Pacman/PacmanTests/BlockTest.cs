@@ -54,14 +54,5 @@ namespace PacmanTests
 
             Assert.True(result);
         }
-
-        [Fact]
-        public void ShouldReturnTrue_IfDotIsRemoved()
-        {
-            var square = new Block(false, true, true, true);
-            var result = square.CanRemoveDot();
-
-            Assert.True(result);
-        }
     }
 }

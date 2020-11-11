@@ -32,9 +32,9 @@ namespace PacmanTests
         public void ShouldPrintMapWithEmptySpace_WhenSquareHasNoDot()
         {
             var mapToBeAltered = Map.CreateASampleMap();
-            mapToBeAltered[0, 0].CanRemoveDot();
-            mapToBeAltered[0, 1].CanRemoveDot();
-            mapToBeAltered[0, 2].CanRemoveDot();
+            mapToBeAltered[0, 0].RemoveDot();
+            mapToBeAltered[0, 1].RemoveDot();
+            mapToBeAltered[0, 2].RemoveDot();
             var pacman = new Pacman.Pacman(Direction.North,10,10);
             var characters = new List<ICharacter> {pacman};
             presenter.PrintMap(mapToBeAltered, characters);
