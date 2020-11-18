@@ -1,10 +1,11 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.InteropServices;
 
 namespace Pacman
 {
-    public class ConsolePlayer
+    public class ConsolePlayer : IPlayer
     {
         private IInputOutput _io;
 
@@ -24,7 +25,9 @@ namespace Pacman
         public Direction DecideNextMove(List<Direction>listOfOptions)
         {
             Direction result;
-            _io.Output("Please input a direction. Choose: \nw = North \ns = South \na = West \nd = East");
+            string stringToOutput = ConstructDirectionInstructionMessage(listOfOptions);
+
+            _io.Output(stringToOutput);
             string errorMessage;
             string userInput;
             do
@@ -34,9 +37,22 @@ namespace Pacman
                 errorMessage += GenerateErrorMessage(listOfOptions, userInput);
                 Print(errorMessage);
 
-            } while (errorMessage!="");
+            } while (errorMessage != "");
             result = inputRef[userInput];
             return result;
+        }
+
+        private string ConstructDirectionInstructionMessage(List<Direction> listOfAvailableDirections)
+        {
+            var stringToOutput = "Please input a direction. Choose: ";
+            foreach (var direction in listOfAvailableDirections)
+            {
+                var directionReference = inputRef.FirstOrDefault(directionReferencePair => directionReferencePair.Value == direction);
+                stringToOutput += $"\n{directionReference.Key}" +
+                                 $" = {directionReference.Value}";
+            }
+
+            return stringToOutput;
         }
 
         private string GenerateErrorMessage(List<Direction> listOfOptions, string userInput)

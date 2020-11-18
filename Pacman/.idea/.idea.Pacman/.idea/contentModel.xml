@@ -19,6 +19,7 @@
         <e p="ConsolePlayer.cs" t="Include" />
         <e p="Direction.cs" t="Include" />
         <e p="GameRules.cs" t="Include" />
+        <e p="GameStatus.cs" t="Include" />
         <e p="ICharacter.cs" t="Include" />
         <e p="IInputOutput.cs" t="Include" />
         <e p="IPlayer.cs" t="Include" />

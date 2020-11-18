@@ -1,4 +1,5 @@
 using System.Data;
+using System.Dynamic;
 
 namespace Pacman
 {
@@ -7,6 +8,8 @@ namespace Pacman
         public int[] Location { get; private set; }
         public Mouth MouthStatus { get; private set; }
 
+        public int NumberOfLife { get; private set; } = 1;
+        
         public Direction FacingDirection { get; private set;}
 
         public Pacman(Direction direction, int row, int column)
@@ -43,6 +46,11 @@ namespace Pacman
             }
 
             MouthStatus = Mouth.Closed;
+        }
+
+        public void DecreaseLivesLeft()
+        {
+            NumberOfLife--;
         }
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -20,7 +21,8 @@ namespace Pacman
 
         public void Run()
         {
-            for (int i = 0; i < 10; i++)
+            var gameStatus = GameStatus.Continue;
+            while (gameStatus != GameStatus.GameOver)
             {
                
                 foreach (var player in _playerList)
@@ -28,16 +30,28 @@ namespace Pacman
                     var characterLocation = player.Value.Location;
                     var availableDirections = _gameRules.GetAvailableDirections(characterLocation, _map);
                     var chosenDirection = player.Key.DecideNextMove(availableDirections);
-                    // player currently at 2,2 and player chooses the West direction
                     var row = UpdateRow(characterLocation[0], chosenDirection);
                     var column = UpdateColumn(characterLocation[1], chosenDirection);
-                    player.Value.Move(chosenDirection, 2, 2);
+                    player.Value.Move(chosenDirection, row, column);
+                    Console.Clear();
+                }
+
+                if (_gameRules.IsCollisionBetweenPacmanAndMonster(_playerList.Values.ToList()))
+                {
+                    gameStatus = GameStatus.GameOver;
+                    _gameRules.HandleCollision(_playerList.Values.ToList());
+                    Console.WriteLine(gameStatus);
                 }
 
                 _presenter.PrintMap(_map, _playerList.Values.ToList());
             }
             
         }
+        
+        // Implement EatDot functionality == when all dots eaten he wins!! Another emoji for winning!!
+        // Track game to see Pacmans life levels
+        // Refactor game because it's messy code:
+        // Separate logic into handling move consequence and updating game status
 
         private int UpdateRow(int currentRowNumber, Direction chosenDirection)
         {

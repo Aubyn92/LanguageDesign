@@ -1,36 +1,24 @@
 ﻿<Properties StartupConfiguration="{EF28C075-4E0B-4471-B0C2-D90A76815585}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Pacman/GameRules.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pacman/ConsolePlayer.cs">
     <Files>
-      <File FileName="Pacman/ConsolePlayer.cs" Line="41" Column="1" />
+      <File FileName="Pacman/ConsolePlayer.cs" Line="48" Column="14" />
       <File FileName="PacmanTests/PlayerTest.cs" />
       <File FileName="Pacman/GameRules.cs" Line="35" Column="1" />
-      <File FileName="PacmanTests/GameRulesTest.cs" Line="27" Column="15" />
+      <File FileName="PacmanTests/GameRulesTest.cs" />
+      <File FileName="Pacman/Program.cs" Line="24" Column="38" />
+      <File FileName="Pacman/PacmanGame.cs" Line="36" Column="18" />
+      <File FileName="Pacman/IPlayer.cs" Line="9" Column="2" />
+      <File FileName="Pacman/Monster.cs" Line="1" Column="1" />
+      <File FileName="Pacman/Randomiser.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Pacman" expanded="True">
             <Node name="Pacman" expanded="True">
-              <Node name="GameRules.cs" selected="True" />
+              <Node name="ConsolePlayer.cs" selected="True" />
             </Node>
             <Node name="PacmanTests" expanded="True" />
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="Pacman" expanded="True">
-            <Node name="PacmanTests" expanded="True">
-              <Node name="MonsterTests" expanded="True" />
-              <Node name="PacmanTests" expanded="True">
-                <Node name="GameRulesTest" expanded="True">
-                  <Node name="ShouldProvideListOfAvailableDirections_WhenCoOrdinateRecorded" selected="True" />
-                </Node>
-              </Node>
-            </Node>
           </Node>
         </State>
       </Pad>

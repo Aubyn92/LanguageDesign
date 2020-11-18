@@ -36,7 +36,7 @@ namespace Pacman
             return listOfDirections;
         }
 
-        public bool IsGameOver(List<ICharacter>characters)
+        public bool IsCollisionBetweenPacmanAndMonster(List<ICharacter>characters)
         {
             var pacman = characters.Find(character => character is Pacman);
             foreach (var character in characters)
@@ -51,6 +51,12 @@ namespace Pacman
             }
 
             return false;
+        }
+
+        public void HandleCollision(List<ICharacter>characters)
+        {
+            Pacman pacman = (Pacman)characters.Find(character => character is Pacman);
+            pacman.DecreaseLivesLeft();
         }
     }
 }

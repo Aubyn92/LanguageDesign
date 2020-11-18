@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace Pacman
 {
-    public class AIPlayer
+    public class AIPlayer : IPlayer
     {
         private IRandom _randomiser;
 

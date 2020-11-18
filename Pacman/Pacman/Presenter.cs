@@ -10,6 +10,7 @@ namespace Pacman
 
         private const string dotSymbol = "🍬";
         private const string monsterSymbol = "👻";
+        private const string collisionSymbol = "🤬";
 
         private static readonly Dictionary<Direction, string> pacmanOpenMouthSymbol = new Dictionary<Direction, string>
         {
@@ -80,6 +81,11 @@ namespace Pacman
 
         private string GetPacmanSymbol(Pacman pacman)
         {
+            if (pacman.NumberOfLife < 1)
+            {
+                return collisionSymbol;
+            }
+            
             if (pacman.MouthStatus == Mouth.Closed)
             {
                 return pacmanClosedMouthSymbol[pacman.FacingDirection];
