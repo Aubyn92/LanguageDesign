@@ -7,10 +7,10 @@ namespace Pacman
     public class Presenter
     {
         private IInputOutput _io;
-
         private const string dotSymbol = "🍬";
         private const string monsterSymbol = "👻";
         private const string collisionSymbol = "🤬";
+        private const string deadSymbol = "☠️";
 
         private static readonly Dictionary<Direction, string> pacmanOpenMouthSymbol = new Dictionary<Direction, string>
         {
@@ -81,9 +81,9 @@ namespace Pacman
 
         private string GetPacmanSymbol(Pacman pacman)
         {
-            if (pacman.NumberOfLife < 1)
+            if (pacman.IsDead)
             {
-                return collisionSymbol;
+                return deadSymbol;
             }
             
             if (pacman.MouthStatus == Mouth.Closed)

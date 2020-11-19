@@ -23,24 +23,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf99ffaf-7a0e-44f3-b165-14645ddf384f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Pacman/GameStatus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pacman/Game/GameTracker.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Pacman/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Pacman/xs/UserPrefs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Pacman/xs/project-cache/Pacman-Debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Pacman/xs/project-cache/Pacman-Debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacman/AIPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/AIPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacman/ConsolePlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/ConsolePlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacman/GameRules.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/GameRules.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacman/Pacman.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/Pacman.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacman/PacmanGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/PacmanGame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacman/AIPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/Player/AIPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacman/ConsolePlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/Player/ConsolePlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacman/GameRules.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/Game/GameRules.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacman/GameStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/Game/GameStatus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacman/ICharacter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/Character/ICharacter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacman/IPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/Player/IPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacman/Monster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/Character/Monster.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacman/Mouth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/Character/Mouth.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacman/Pacman.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/Character/Pacman.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacman/PacmanGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/Game/PacmanGame.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pacman/Presenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/Presenter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacman/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacman/obj/Debug/netcoreapp3.1/Pacman.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/obj/Debug/netcoreapp3.1/Pacman.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacman/obj/Debug/netcoreapp3.1/Pacman.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/obj/Debug/netcoreapp3.1/Pacman.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacman/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Pacman/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PacmanTests/GameRulesTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/GameRulesTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PacmanTests/obj/Debug/netcoreapp3.1/PacmanTests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/obj/Debug/netcoreapp3.1/PacmanTests.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PacmanTests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/PacmanTests/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,8 +83,11 @@
         <option value="$PROJECT_DIR$/Pacman/Program.cs" />
         <option value="$PROJECT_DIR$/Pacman/Pacman.cs" />
         <option value="$PROJECT_DIR$/Pacman/GameRules.cs" />
-        <option value="$PROJECT_DIR$/Pacman/Presenter.cs" />
         <option value="$PROJECT_DIR$/Pacman/PacmanGame.cs" />
+        <option value="$PROJECT_DIR$/Pacman/Game/GameRules.cs" />
+        <option value="$PROJECT_DIR$/Pacman/Game/GameTracker.cs" />
+        <option value="$PROJECT_DIR$/Pacman/Character/Pacman.cs" />
+        <option value="$PROJECT_DIR$/Pacman/Presenter.cs" />
       </list>
     </option>
   </component>
@@ -181,7 +181,9 @@
       <workItem from="1605487350014" duration="853000" />
       <workItem from="1605574441686" duration="1310000" />
       <workItem from="1605580870101" duration="1390000" />
-      <workItem from="1605661307036" duration="4991000" />
+      <workItem from="1605661307036" duration="5123000" />
+      <workItem from="1605672180282" duration="223000" />
+      <workItem from="1605674565943" duration="3497000" />
     </task>
     <servers />
   </component>
@@ -211,29 +213,29 @@
       <screen x="0" y="23" width="1680" height="945" />
     </state>
     <state x="450" y="287" key="#Notifications/0.23.1680.945@0.23.1680.945" timestamp="1603943428003" />
-    <state width="1626" height="470" key="GridCell.Tab.0.bottom" timestamp="1605665714705">
+    <state width="1598" height="52" key="GridCell.Tab.0.bottom" timestamp="1605672403330">
       <screen x="0" y="23" width="1680" height="945" />
     </state>
     <state width="1628" height="383" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1604627560204" />
-    <state width="1626" height="470" key="GridCell.Tab.0.bottom/0.23.1680.945@0.23.1680.945" timestamp="1605665714705" />
+    <state width="1598" height="52" key="GridCell.Tab.0.bottom/0.23.1680.945@0.23.1680.945" timestamp="1605672403330" />
     <state width="1571" height="267" key="GridCell.Tab.0.bottom/56.23.1624.1027@56.23.1624.1027" timestamp="1603850496346" />
-    <state width="1626" height="470" key="GridCell.Tab.0.center" timestamp="1605665714704">
+    <state width="1598" height="52" key="GridCell.Tab.0.center" timestamp="1605672403328">
       <screen x="0" y="23" width="1680" height="945" />
     </state>
     <state width="1628" height="383" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1604627560199" />
-    <state width="1626" height="470" key="GridCell.Tab.0.center/0.23.1680.945@0.23.1680.945" timestamp="1605665714704" />
+    <state width="1598" height="52" key="GridCell.Tab.0.center/0.23.1680.945@0.23.1680.945" timestamp="1605672403328" />
     <state width="1571" height="267" key="GridCell.Tab.0.center/56.23.1624.1027@56.23.1624.1027" timestamp="1603850496345" />
-    <state width="1626" height="470" key="GridCell.Tab.0.left" timestamp="1605665714704">
+    <state width="1598" height="52" key="GridCell.Tab.0.left" timestamp="1605672403327">
       <screen x="0" y="23" width="1680" height="945" />
     </state>
     <state width="1628" height="383" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1604627560198" />
-    <state width="1626" height="470" key="GridCell.Tab.0.left/0.23.1680.945@0.23.1680.945" timestamp="1605665714704" />
+    <state width="1598" height="52" key="GridCell.Tab.0.left/0.23.1680.945@0.23.1680.945" timestamp="1605672403327" />
     <state width="1571" height="267" key="GridCell.Tab.0.left/56.23.1624.1027@56.23.1624.1027" timestamp="1603850496344" />
-    <state width="1626" height="470" key="GridCell.Tab.0.right" timestamp="1605665714705">
+    <state width="1598" height="52" key="GridCell.Tab.0.right" timestamp="1605672403329">
       <screen x="0" y="23" width="1680" height="945" />
     </state>
     <state width="1628" height="383" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1604627560203" />
-    <state width="1626" height="470" key="GridCell.Tab.0.right/0.23.1680.945@0.23.1680.945" timestamp="1605665714705" />
+    <state width="1598" height="52" key="GridCell.Tab.0.right/0.23.1680.945@0.23.1680.945" timestamp="1605672403329" />
     <state width="1571" height="267" key="GridCell.Tab.0.right/56.23.1624.1027@56.23.1624.1027" timestamp="1603850496345" />
     <state width="1625" height="332" key="GridCell.Tab.1.bottom" timestamp="1605060114493">
       <screen x="0" y="23" width="1680" height="945" />

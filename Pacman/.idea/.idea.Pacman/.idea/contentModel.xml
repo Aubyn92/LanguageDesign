@@ -12,21 +12,25 @@
       <e p="packages" t="ExcludeRecursive" />
       <e p="Pacman" t="IncludeRecursive">
         <e p=".gitignore" t="Include" />
-        <e p="AIPlayer.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Block.cs" t="Include" />
+        <e p="Character" t="Include">
+          <e p="ICharacter.cs" t="Include" />
+          <e p="Monster.cs" t="Include" />
+          <e p="Mouth.cs" t="Include" />
+          <e p="Pacman.cs" t="Include" />
+        </e>
         <e p="ConsoleIo.cs" t="Include" />
-        <e p="ConsolePlayer.cs" t="Include" />
         <e p="Direction.cs" t="Include" />
-        <e p="GameRules.cs" t="Include" />
-        <e p="GameStatus.cs" t="Include" />
-        <e p="ICharacter.cs" t="Include" />
+        <e p="Game" t="Include">
+          <e p="GameRules.cs" t="Include" />
+          <e p="GameStatus.cs" t="Include" />
+          <e p="GameTracker.cs" t="Include" />
+          <e p="PacmanGame.cs" t="Include" />
+        </e>
         <e p="IInputOutput.cs" t="Include" />
-        <e p="IPlayer.cs" t="Include" />
         <e p="IRandom.cs" t="Include" />
         <e p="Map.cs" t="Include" />
-        <e p="Monster.cs" t="Include" />
-        <e p="Mouth.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -34,9 +38,12 @@
             </e>
           </e>
         </e>
-        <e p="Pacman.cs" t="Include" />
         <e p="Pacman.csproj" t="IncludeRecursive" />
-        <e p="PacmanGame.cs" t="Include" />
+        <e p="Player" t="Include">
+          <e p="AIPlayer.cs" t="Include" />
+          <e p="ConsolePlayer.cs" t="Include" />
+          <e p="IPlayer.cs" t="Include" />
+        </e>
         <e p="Presenter.cs" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="Randomiser.cs" t="Include" />
