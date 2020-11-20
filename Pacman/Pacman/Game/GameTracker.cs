@@ -6,7 +6,7 @@ namespace Pacman
         public int NumberOfLives { get; private set; }
         public int NumberOfDotsEaten { get; private set; }
 
-        public GameTracker(int numberOfDotsLeft, int numberOfLives = 3)
+        public GameTracker(int numberOfDotsLeft, int numberOfLives = 1)
         {
             NumberOfDotsLeft = numberOfDotsLeft;
             NumberOfLives = numberOfLives;

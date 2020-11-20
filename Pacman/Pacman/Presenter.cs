@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data.Common;
+using System.Linq;
 
 namespace Pacman
 {
@@ -58,15 +59,30 @@ namespace Pacman
 
         private string AssignSymbol(List<ICharacter> characters, int row, int column, Block[,] twoDMap)
         {
-            foreach (var character in characters)
+            var foundCharacters = characters.FindAll(x => (x.Location[0] == row && x.Location[1] == column));
+            
+            if (foundCharacters.Count < 1)
             {
-                if (character.Location[0]==row && character.Location[1]==column)
-                {
-                    return AssignCharacterSymbol(character);
-                }
+                return twoDMap[row, column].HasDot ? dotSymbol : " ";
             }
 
-            return twoDMap[row, column].HasDot ? dotSymbol : " ";
+            if (foundCharacters.Count > 1)
+            {
+                var pacman = foundCharacters.FirstOrDefault(x => x is Pacman);
+                return pacman == null ? monsterSymbol : GetPacmanNegativeImpactSymbol((Pacman) pacman);
+            }
+       
+            return AssignCharacterSymbol(foundCharacters[0]);
+        }
+
+        private string GetPacmanNegativeImpactSymbol(Pacman pacman)
+        {
+            if (pacman.IsDead)
+            {
+                return deadSymbol;
+            }
+
+            return collisionSymbol;
         }
 
         private string AssignCharacterSymbol(ICharacter character)
@@ -81,11 +97,6 @@ namespace Pacman
 
         private string GetPacmanSymbol(Pacman pacman)
         {
-            if (pacman.IsDead)
-            {
-                return deadSymbol;
-            }
-            
             if (pacman.MouthStatus == Mouth.Closed)
             {
                 return pacmanClosedMouthSymbol[pacman.FacingDirection];

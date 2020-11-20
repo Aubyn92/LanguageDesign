@@ -53,10 +53,14 @@ namespace Pacman
             return false;
         }
 
-        public void HandleCollision(List<ICharacter>characters)
+        public void HandleCollision(List<ICharacter>characters, GameTracker tracker)
         {
             Pacman pacman = (Pacman)characters.Find(character => character is Pacman);
-            pacman.DecreaseLivesLeft();
+            tracker.DecreaseLives();
+            if (tracker.NumberOfLives == 0)
+            {
+                pacman.IsDead = true;
+            }
         }
     }
 }

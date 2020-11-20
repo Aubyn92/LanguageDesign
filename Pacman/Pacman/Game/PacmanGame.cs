@@ -10,12 +10,14 @@ namespace Pacman
         private Block[,] _map;
         private GameRules _gameRules;
         private Presenter _presenter;
+        private GameTracker _tracker;
 
         public PacmanGame(Dictionary<IPlayer, ICharacter> playerList, Block [,] map, Presenter presenter)
         {
             _playerList = playerList;
             _map = map;
             _gameRules = new GameRules();
+            _tracker = new GameTracker(3);
             _presenter = presenter;
         }
 
@@ -39,7 +41,7 @@ namespace Pacman
                 if (_gameRules.IsCollisionBetweenPacmanAndMonster(_playerList.Values.ToList()))
                 {
                     gameStatus = GameStatus.GameOver;
-                    _gameRules.HandleCollision(_playerList.Values.ToList());
+                    _gameRules.HandleCollision(_playerList.Values.ToList(), _tracker);
                     Console.WriteLine(gameStatus);
                 }
 
