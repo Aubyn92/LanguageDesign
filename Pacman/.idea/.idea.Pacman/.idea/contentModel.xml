@@ -23,7 +23,7 @@
         <e p="ConsoleIo.cs" t="Include" />
         <e p="Direction.cs" t="Include" />
         <e p="Game" t="Include">
-          <e p="GameRules.cs" t="Include" />
+          <e p="GameLogic.cs" t="Include" />
           <e p="GameStatus.cs" t="Include" />
           <e p="GameTracker.cs" t="Include" />
           <e p="PacmanGame.cs" t="Include" />

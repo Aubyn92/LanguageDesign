@@ -9,11 +9,11 @@ namespace PacmanTests
 {
     public class GameRulesTest
     {
-        private GameRules _gameRules;
+        private GameLogic _gameLogic;
 
         public GameRulesTest()
         {
-            _gameRules = new GameRules();
+            _gameLogic = new GameLogic();
         }
         
         [Fact]
@@ -22,7 +22,7 @@ namespace PacmanTests
         {
             var map = Map.CreateASampleMap();
             var location = new int[] {0, 0};
-            var result = _gameRules.GetAvailableDirections(location, map);
+            var result = _gameLogic.GetAvailableDirections(location, map);
             var expected = new List<Direction>
             {
                 Direction.East
@@ -37,7 +37,7 @@ namespace PacmanTests
             var monster1 = new Monster(1,1);
             var monster2 = new Monster(0,0);
             var characters = new List<ICharacter>{pacman, monster1, monster2};
-            var result = _gameRules.IsCollisionBetweenPacmanAndMonster(characters);
+            var result = _gameLogic.IsCollisionBetweenPacmanAndMonster(characters);
             Assert.True(result);
         }
         
@@ -48,7 +48,7 @@ namespace PacmanTests
             var monster1 = new Monster(1,1);
             var monster2 = new Monster(3,2);
             var characters = new List<ICharacter>{pacman, monster1, monster2};
-            var result = _gameRules.IsCollisionBetweenPacmanAndMonster(characters);
+            var result = _gameLogic.IsCollisionBetweenPacmanAndMonster(characters);
             Assert.False(result);
         }
         

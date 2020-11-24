@@ -2,9 +2,9 @@ using System.Collections.Generic;
 
 namespace Pacman
 {
-    public class GameRules
+    public class GameLogic
     {
-        public GameRules()
+        public GameLogic()
         {
             
         }
@@ -53,13 +53,20 @@ namespace Pacman
             return false;
         }
 
-        public void HandleCollision(List<ICharacter>characters, GameTracker tracker)
+        private void HandleCollision(List<ICharacter>characters, GameTracker tracker)
         {
             Pacman pacman = (Pacman)characters.Find(character => character is Pacman);
             tracker.DecreaseLives();
-            if (tracker.NumberOfLives == 0)
+            if (tracker.NumberOfLives != 0) return;
+            pacman.IsDead = true;
+            tracker.Status = GameStatus.GameOver;
+        }
+
+        public void HandleMoveConsequence(List<ICharacter>characters, GameTracker tracker, Block[,]map)
+        {
+            if (IsCollisionBetweenPacmanAndMonster(characters))
             {
-                pacman.IsDead = true;
+                HandleCollision(characters, tracker);
             }
         }
     }
