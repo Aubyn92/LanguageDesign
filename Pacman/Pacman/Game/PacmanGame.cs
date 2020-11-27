@@ -16,8 +16,7 @@ namespace Pacman
         {
             _playerList = playerList;
             _map = map;
-            _gameLogic = new GameLogic();
-            _tracker = new GameTracker(3);
+            _gameLogic= new GameLogic(playerList, map, new GameTracker((3)));
             _presenter = presenter;
         }
 
@@ -28,54 +27,13 @@ namespace Pacman
             {
                 foreach (var player in _playerList)
                 {
-                    PerformCharacterMove(player);
+                    _gameLogic.PerformCharacterMove(player);
                     Console.Clear();
                 }
 
-                MoveConsequence();
+                _gameLogic.MoveConsequence();
                 _presenter.PrintMap(_map, _playerList.Values.ToList());
             }
-        }
-
-        private void MoveConsequence()
-        {
-            var characters = _playerList.Values.ToList();
-            _gameLogic.HandleMoveConsequence(characters, _tracker, _map);
-        }
-
-        private void PerformCharacterMove(KeyValuePair<IPlayer, ICharacter> player)
-        {
-            var characterLocation = player.Value.Location;
-            var availableDirections = _gameLogic.GetAvailableDirections(characterLocation, _map);
-            var chosenDirection = player.Key.DecideNextMove(availableDirections);
-            var row = UpdateRow(characterLocation[0], chosenDirection);
-            var column = UpdateColumn(characterLocation[1], chosenDirection);
-            player.Value.Move(chosenDirection, row, column);
-        }
-
-        // Implement EatDot functionality == when all dots eaten he wins!! Another emoji for winning!!
-        // Track game to see Pacmans life levels
-        // Refactor game because it's messy code:
-        // Separate logic into handling move consequence and updating game status
-
-        private int UpdateRow(int currentRowNumber, Direction chosenDirection)
-        {
-            return chosenDirection switch
-            {
-                Direction.North => currentRowNumber - 1,
-                Direction.South => currentRowNumber + 1,
-                _ => currentRowNumber
-            };
-        }
-        
-        private int UpdateColumn(int currentColumnNumber, Direction chosenDirection)
-        {
-            return chosenDirection switch
-            {
-                Direction.West => currentColumnNumber - 1,
-                Direction.East => currentColumnNumber + 1,
-                _ => currentColumnNumber
-            };
         }
     }
 }

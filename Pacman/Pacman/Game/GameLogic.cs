@@ -1,19 +1,28 @@
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Pacman
 {
     public class GameLogic
     {
-        public GameLogic()
+        private Dictionary<IPlayer, ICharacter> _playerList;
+        private Block[,] _map;
+        private GameTracker _tracker;
+        private List<ICharacter> _characters;
+
+        public GameLogic(Dictionary<IPlayer, ICharacter> playerList, Block [,] map, GameTracker tracker)
         {
-            
+            _playerList = playerList;
+            _map = map;
+            _tracker = tracker;
+            _characters = _playerList.Values.ToList();
         }
 
-        public List<Direction> GetAvailableDirections(int[] location, Block[,] map)
+        public List<Direction> GetAvailableDirections(int[] location)
         {
             var row = location[0];
             var column = location[1];
-            var block = map[row, column];
+            var block = _map[row, column];
 
             var listOfDirections = new List<Direction>();
             if (!block.IsTopBorderAWall())
@@ -36,10 +45,10 @@ namespace Pacman
             return listOfDirections;
         }
 
-        public bool IsCollisionBetweenPacmanAndMonster(List<ICharacter>characters)
+        public bool IsCollisionBetweenPacmanAndMonster()
         {
-            var pacman = characters.Find(character => character is Pacman);
-            foreach (var character in characters)
+            var pacman = _characters.Find(character => character is Pacman);
+            foreach (var character in _characters)
             {
                 if (!(character is Pacman))
                 {
@@ -53,21 +62,51 @@ namespace Pacman
             return false;
         }
 
-        private void HandleCollision(List<ICharacter>characters, GameTracker tracker)
+        private void HandleCollision()
         {
-            Pacman pacman = (Pacman)characters.Find(character => character is Pacman);
-            tracker.DecreaseLives();
-            if (tracker.NumberOfLives != 0) return;
+            Pacman pacman = (Pacman)_characters.Find(character => character is Pacman);
+            _tracker.DecreaseLives();
+            if (_tracker.NumberOfLives != 0) return;
             pacman.IsDead = true;
-            tracker.Status = GameStatus.GameOver;
+            _tracker.Status = GameStatus.GameOver;
         }
 
-        public void HandleMoveConsequence(List<ICharacter>characters, GameTracker tracker, Block[,]map)
+        public void HandleMoveConsequence()
         {
-            if (IsCollisionBetweenPacmanAndMonster(characters))
+            if (IsCollisionBetweenPacmanAndMonster(_characters))
             {
-                HandleCollision(characters, tracker);
+                HandleCollision(_characters, _tracker);
             }
+        }
+        
+        public void PerformCharacterMove(KeyValuePair<IPlayer, ICharacter> player)
+        {
+            var characterLocation = player.Value.Location;
+            var availableDirections = GetAvailableDirections(characterLocation, _map);
+            var chosenDirection = player.Key.DecideNextMove(availableDirections);
+            var row = UpdateRow(characterLocation[0], chosenDirection);
+            var column = UpdateColumn(characterLocation[1], chosenDirection);
+            player.Value.Move(chosenDirection, row, column);
+        }
+
+        private int UpdateRow(int currentRowNumber, Direction chosenDirection)
+        {
+            return chosenDirection switch
+            {
+                Direction.North => currentRowNumber - 1,
+                Direction.South => currentRowNumber + 1,
+                _ => currentRowNumber
+            };
+        }
+        
+        private int UpdateColumn(int currentColumnNumber, Direction chosenDirection)
+        {
+            return chosenDirection switch
+            {
+                Direction.West => currentColumnNumber - 1,
+                Direction.East => currentColumnNumber + 1,
+                _ => currentColumnNumber
+            };
         }
     }
 }

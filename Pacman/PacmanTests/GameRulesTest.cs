@@ -11,17 +11,14 @@ namespace PacmanTests
     {
         private GameLogic _gameLogic;
 
-        public GameRulesTest()
-        {
-            _gameLogic = new GameLogic();
-        }
-        
         [Fact]
 
         public void ShouldProvideListOfAvailableDirections_WhenCoOrdinateRecorded()
         {
             var map = Map.CreateASampleMap();
             var location = new int[] {0, 0};
+            var dummyPlayerList = new Dictionary<IPlayer, ICharacter>();
+            _gameLogic = new GameLogic(dummyPlayerList, map, new GameTracker(3));
             var result = _gameLogic.GetAvailableDirections(location, map);
             var expected = new List<Direction>
             {
@@ -51,11 +48,5 @@ namespace PacmanTests
             var result = _gameLogic.IsCollisionBetweenPacmanAndMonster(characters);
             Assert.False(result);
         }
-        
-        // [Fact]
-        // public void ShouldReturnTrue_WhenPacmanHasEatenAllDots()
-        // {
-        //     
-        // }
     }
 }
