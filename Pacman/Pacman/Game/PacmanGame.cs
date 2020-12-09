@@ -16,7 +16,8 @@ namespace Pacman
         {
             _playerList = playerList;
             _map = map;
-            _gameLogic= new GameLogic(playerList, map, new GameTracker((3)));
+            _tracker = new GameTracker(3);
+            _gameLogic= new GameLogic(playerList, map, _tracker);
             _presenter = presenter;
         }
 
@@ -31,7 +32,7 @@ namespace Pacman
                     Console.Clear();
                 }
 
-                _gameLogic.MoveConsequence();
+                _gameLogic.HandleMoveConsequence();
                 _presenter.PrintMap(_map, _playerList.Values.ToList());
             }
         }

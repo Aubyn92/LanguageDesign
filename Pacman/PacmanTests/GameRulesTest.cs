@@ -19,7 +19,7 @@ namespace PacmanTests
             var location = new int[] {0, 0};
             var dummyPlayerList = new Dictionary<IPlayer, ICharacter>();
             _gameLogic = new GameLogic(dummyPlayerList, map, new GameTracker(3));
-            var result = _gameLogic.GetAvailableDirections(location, map);
+            var result = _gameLogic.GetAvailableDirections(location);
             var expected = new List<Direction>
             {
                 Direction.East
@@ -34,7 +34,7 @@ namespace PacmanTests
             var monster1 = new Monster(1,1);
             var monster2 = new Monster(0,0);
             var characters = new List<ICharacter>{pacman, monster1, monster2};
-            var result = _gameLogic.IsCollisionBetweenPacmanAndMonster(characters);
+            var result = _gameLogic.IsCollisionBetweenPacmanAndMonster();
             Assert.True(result);
         }
         
@@ -45,7 +45,7 @@ namespace PacmanTests
             var monster1 = new Monster(1,1);
             var monster2 = new Monster(3,2);
             var characters = new List<ICharacter>{pacman, monster1, monster2};
-            var result = _gameLogic.IsCollisionBetweenPacmanAndMonster(characters);
+            var result = _gameLogic.IsCollisionBetweenPacmanAndMonster();
             Assert.False(result);
         }
     }

@@ -73,16 +73,16 @@ namespace Pacman
 
         public void HandleMoveConsequence()
         {
-            if (IsCollisionBetweenPacmanAndMonster(_characters))
+            if (IsCollisionBetweenPacmanAndMonster())
             {
-                HandleCollision(_characters, _tracker);
+                HandleCollision();
             }
         }
         
         public void PerformCharacterMove(KeyValuePair<IPlayer, ICharacter> player)
         {
             var characterLocation = player.Value.Location;
-            var availableDirections = GetAvailableDirections(characterLocation, _map);
+            var availableDirections = GetAvailableDirections(characterLocation);
             var chosenDirection = player.Key.DecideNextMove(availableDirections);
             var row = UpdateRow(characterLocation[0], chosenDirection);
             var column = UpdateColumn(characterLocation[1], chosenDirection);
